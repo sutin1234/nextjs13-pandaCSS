@@ -1,31 +1,22 @@
+'use client'
+
 import Image from 'next/image'
 import styles from './page.module.css'
+import {css} from "../../styled-system/css";
+import {styled} from "../../styled-system/jsx";
+import {useState} from "react";
 
 export default function Home() {
+  const [color, setColor] = useState('blue.500')
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
+        <p className={css({ fontSize: "2xl", fontWeight: 'bold', color: 'yellow.300' })}>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <styled.button color={color}>Button</styled.button>
+
       </div>
 
       <div className={styles.center}>
