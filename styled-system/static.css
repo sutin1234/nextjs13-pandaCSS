@@ -1,0 +1,9 @@
+@layer utilities {
+  .text_red\.300 {
+    color: var(--colors-red-300)
+    }
+
+  .text_blue\.500 {
+    color: var(--colors-blue-500)
+    }
+}
