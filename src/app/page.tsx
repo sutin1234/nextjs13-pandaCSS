@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import {css} from "../../styled-system/css";
-import {styled} from "../../styled-system/jsx";
+import {css} from "styled-system/css";
+import {styled} from "styled-system/jsx";
 import {useState} from "react";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p className={css({ fontSize: "2xl", fontWeight: 'bold', color: 'yellow.300' })}>
+        <p className={css({ fontSize: "2xl", fontWeight: 'bold', color: 'yellow.300', bgColor:'white' })}>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
